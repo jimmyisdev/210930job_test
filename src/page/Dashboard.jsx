@@ -13,6 +13,11 @@ export default function Dashboard() {
             <li>2. Open the console</li>
             <li>3. Check my answer</li>
           </ul>
+          <h3>
+            <a href="https://github.com/jimmyisdev/210930job_test">
+              Code on Github
+            </a>
+          </h3>
         </div>
       </section>
     );

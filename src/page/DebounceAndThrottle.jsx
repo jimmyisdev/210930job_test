@@ -2,20 +2,21 @@ import React from 'react'
 // import { debounce, throttle } from "./../func/debounce_throttle";
 
 export default function DebounceAndThrottle() {
-  function consoleLog() {
-    console.log("click");
-  }
+  // function consoleLog() {
+  //   console.log("click");
+  // }
 
   
   function debounce(func, delay) {
     let handleTimeOut;
-    
-    return function () {
-      let args = arguments;
+    console.log("fired 12");
+    return function (...args) {
+      console.log(args)
+      
       handleTimeOut && clearTimeout(handleTimeOut);
-      handleTimeOut = setTimeout( function(){
+      handleTimeOut = setTimeout( ()=>{
         console.log("yes")
-        func(args);
+        func(...args);
       }
       , delay);
     };
@@ -29,7 +30,7 @@ export default function DebounceAndThrottle() {
       </div>
       <div>
         <div>
-          <button onClick={() => debounce(consoleLog, 2000)}>Debounce</button>
+          <button onClick={() => debounce((e)=>console.log("clicked debounce"), 5000)}>Debounce</button>
           <span></span>
         </div>
         <div>

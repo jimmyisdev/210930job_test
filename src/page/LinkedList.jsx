@@ -7,7 +7,11 @@ export default function LinkedList() {
           <h1>LinkedList</h1>
         </div>
         <div>
-          <p>Check the file src/func/linked_list.js</p>
+          <h3>
+            <a href="https://github.com/jimmyisdev/210930job_test/blob/main/src/func/linked_list.js">
+              Check Code on Github
+            </a>
+          </h3>
         </div>
       </section>
     );
