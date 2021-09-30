@@ -6,21 +6,13 @@
 // const throttleFunc = throttle(func, timeout);
 
 
-export function debounce(func, delay){
+export default function debounce(func, delay) {
     let handleTimeOut;
-    return function(func, delay){
-        if (handleTimeOut) {
-            clearTimeout(handleTimeOut);
-        }
-        handleTimeOut = setTimeout(function(){
-            console.log("yes")
-            func()
-        }, delay);
-    }
-
-}
-
-
-export function throttle(func, timeout) {
-
-}
+    return function (...args) {
+      handleTimeOut && clearTimeout(handleTimeOut);
+      handleTimeOut = setTimeout(() => {
+        func(...args);
+      }, delay);
+    };
+  }
+  
