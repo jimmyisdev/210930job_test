@@ -20,7 +20,6 @@ export default function Fibonacci() {
   function calcResult(inputVal) {
     let calc = fibonacci(inputVal);
     setResult(calc)
-    console.log(result);
   }
     return (
       <section className="fibonacci">
@@ -38,6 +37,13 @@ export default function Fibonacci() {
         </div>
         <div>
           <span>{result}</span>
+        </div>
+        <div>
+          <h3>
+            <a href="https://github.com/jimmyisdev/210930job_test/blob/main/src/func/fibonacci_number.js">
+              Check Code on Github
+            </a>
+          </h3>
         </div>
       </section>
     );

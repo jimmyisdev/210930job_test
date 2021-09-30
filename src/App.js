@@ -5,12 +5,12 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-import FormAuth from './page/FormAuth';
+// import FormAuth from './page/FormAuth';
 import GetPagination from './page/GetPagination';
 import Dashboard from './page/Dashboard';
 import Fibonacci from './page/Fibonacci';
 import LinkedList from './page/LinkedList';
-import DebounceAndThrottle from './page/DebounceAndThrottle';
+import DebounceOrThrottle from "./page/DebounceOrThrottle";
 
 function App() {
   return (
@@ -40,11 +40,11 @@ function App() {
 
             <li>
               <NavLink
-                to="/debounce_and_throttle"
+                to="/debounce_or_throttle"
                 className="notSelected"
                 activeClassName="selected"
               >
-                Debounce & Throttle
+                Debounce or Throttle
               </NavLink>
             </li>
             <li>
@@ -67,7 +67,7 @@ function App() {
               </NavLink>
             </li>
 
-            <li>
+            {/* <li>
               <NavLink
                 to="/formauth"
                 className="notSelected"
@@ -75,10 +75,9 @@ function App() {
               >
                 Form Authentication
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </header>
-
         <Switch>
           <Route path="/" exact>
             <Dashboard />
@@ -86,8 +85,8 @@ function App() {
           <Route path="/fibonacci">
             <Fibonacci />
           </Route>
-          <Route path="/debounce_and_throttle">
-            <DebounceAndThrottle />
+          <Route path="/debounce_or_throttle">
+            <DebounceOrThrottle />
           </Route>
           <Route path="/pagination">
             <GetPagination />
@@ -96,9 +95,9 @@ function App() {
           <Route path="/linkedlist">
             <LinkedList />
           </Route>
-          <Route path="/formauth">
+          {/* <Route path="/formauth">
             <FormAuth />
-          </Route>
+          </Route> */}
         </Switch>
       </div>
     </Router>

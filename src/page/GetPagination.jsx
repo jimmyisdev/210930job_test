@@ -40,10 +40,6 @@ export default function GetPagination() {
     });
     return;
   }
-
-
-
-
     useEffect(() => {
       console.log(values);
     }, [values]);
@@ -85,25 +81,15 @@ export default function GetPagination() {
             Confirm
           </button>
         </div>
-
+        <div>
+          <h3>
+            <a href="https://github.com/jimmyisdev/210930job_test/blob/main/src/func/getPagination.js">
+              Check Code on Github
+            </a>
+          </h3>
+        </div>
       </section>
     );
   }
 
 
-
-
-// 實作 getPagination
-// 參考右圖範例實作可以取得分頁資訊的 function,根據輸入的
-// offset (資料開始位置)、limit(資料擷取長度)、total (總資料筆
-// 數),取得 currentPage (當下頁籤)、totalPage (頁面總數量)、
-// renderPages (顯示的頁籤範圍一次顯示五個頁籤)。
-// const { currentPage, totalPage, renderPages } = getPagination(offset, limit, total)
-
-// getPagination(0, 5, 33) // { currentPage: 1, totalPage: 7, renderPages: [1,2,3,4,5] }
-// getPagination(5, 5, 33) // { currentPage: 2, totalPage: 7, renderPages: [1,2,3,4,5] }
-// getPagination(10, 5, 33) // { currentPage: 3, totalPage: 7, renderPages: [1,2,3,4,5] }
-// getPagination(15, 5, 33) // { currentPage: 4, totalPage: 7, renderPages: [2,3,4,5,6] }
-// getPagination(20, 5, 33) // { currentPage: 5, totalPage: 7, renderPages: [3,4,5,6,7] }
-// getPagination(25, 5, 33) // { currentPage: 6, totalPage: 7, renderPages: [3,4,5,6,7] }
-// getPagination(30, 5, 33) // { currentPage: 7, totalPage: 7, renderPages: [3,4,5,6,7] }
