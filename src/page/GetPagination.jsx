@@ -83,7 +83,11 @@ export default function GetPagination() {
         </div>
         <div>
           <h3>
-            <a href="https://github.com/jimmyisdev/210930job_test/blob/main/src/func/getPagination.js">
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/jimmyisdev/210930job_test/blob/main/src/func/getPagination.js"
+            >
               Check Code on Github
             </a>
           </h3>

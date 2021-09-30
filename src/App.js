@@ -5,7 +5,7 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-// import FormAuth from './page/FormAuth';
+import FormAuth from './page/FormAuth';
 import GetPagination from './page/GetPagination';
 import Dashboard from './page/Dashboard';
 import Fibonacci from './page/Fibonacci';
@@ -67,7 +67,7 @@ function App() {
               </NavLink>
             </li>
 
-            {/* <li>
+            <li>
               <NavLink
                 to="/formauth"
                 className="notSelected"
@@ -75,7 +75,7 @@ function App() {
               >
                 Form Authentication
               </NavLink>
-            </li> */}
+            </li>
           </ul>
         </header>
         <Switch>
@@ -95,9 +95,9 @@ function App() {
           <Route path="/linkedlist">
             <LinkedList />
           </Route>
-          {/* <Route path="/formauth">
+          <Route path="/formauth">
             <FormAuth />
-          </Route> */}
+          </Route>
         </Switch>
       </div>
     </Router>

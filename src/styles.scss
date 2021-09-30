@@ -56,6 +56,9 @@ a:visited,
 a:hover{
     color: inherit;
 }
+form{
+    @include flexC;
+}
 
 input, button, submit { 
     border:none; 
@@ -71,6 +74,10 @@ input{
     margin: 1rem;
     height: 2rem;
     padding: .5rem;
+}
+label{
+    @include flexR;
+    align-items: center;
 }
 
 footer{

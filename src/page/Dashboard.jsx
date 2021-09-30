@@ -14,7 +14,11 @@ export default function Dashboard() {
             <li>3. Check my answer</li>
           </ul>
           <h3>
-            <a href="https://github.com/jimmyisdev/210930job_test">
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/jimmyisdev/210930job_test"
+            >
               Code on Github
             </a>
           </h3>

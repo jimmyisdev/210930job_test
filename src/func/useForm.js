@@ -1,20 +1,30 @@
 import { useState } from "react";
 
-export default function useFrom(){
-    const [values, setValues] = useState({
-        account: "",
-        password: "",
-        rememberMe: false,
-    });
-    const  handleChange = e =>{
-        setValues((state) => ({ ...state, [e.target.name]: e.target.value }));
+export default function useForm() {
+  const [values, setValues] = useState({
+    account: "",
+    password: "",
+    rememberMe: false,
+  });
+    const errors = {};
 
+
+  const handleChange = (e) => {
+    setValues((values) => ({ ...values, [e.target.name]: e.target.value }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+     console.table(values);
+  };
+  const validation = (values) =>{
+      const errors = {};
+      if (!values.account) {
+        errors.account = "請輸入帳號";
+      } else if (!values.password) {
+        errors.password = "請輸入密碼";
+      }
+      return errors;
     }
-    const handleSubmit = e =>{
-        e.preventDefault()
-    }
-    let errors;
 
-
-    return { handleChange, handleSubmit, values, errors }
+  return { handleChange, handleSubmit, values, errors };
 }

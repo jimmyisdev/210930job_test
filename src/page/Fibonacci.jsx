@@ -40,7 +40,11 @@ export default function Fibonacci() {
         </div>
         <div>
           <h3>
-            <a href="https://github.com/jimmyisdev/210930job_test/blob/main/src/func/fibonacci_number.js">
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/jimmyisdev/210930job_test/blob/main/src/func/fibonacci_number.js"
+            >
               Check Code on Github
             </a>
           </h3>
